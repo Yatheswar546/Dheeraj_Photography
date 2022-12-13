@@ -16,9 +16,10 @@ body{
     overflow-x: hidden;
 }
 
-/* NAVBAR Section */
+/*************************************************** NAVBAR Section *********************************************************/
 nav{
-    background: #1b4fde;
+    background: #395bb9;
+    /* background: transparent; */
     height: 80px;
     width: 100%;
     position: fixed;
@@ -108,9 +109,18 @@ a.active,a:hover{
         left: 0;
     }
 }
+@media screen and (max-width:400px){
+    label.logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0px 30px;
+        font-weight: bold;
+    }
+}
 
 
-/* Banner Section */
+/***************************************************** Banner Section ******************************************************/
 .banner{
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5)) ,url('../images/banner.jpeg');
@@ -156,15 +166,13 @@ a.active,a:hover{
 .banner .button:hover{
     opacity: .6;
 }
-@media screen and(max-width:600px) {
-    .banner .container h1,span {
-        border: 6px solid white;
-        padding: 6px 14px;
-        display: inline-block;
+@media screen and (max-width:600px) {
+    .banner .container h1 {
+        font-size: 30px;
     }
 }
             
-/* ABOUT Section */
+/******************************************************* ABOUT Section *******************************************************/
 .about-section{
     background-color: rgb(225, 229, 234);
     width: 100%;
@@ -302,7 +310,7 @@ a.active,a:hover{
     }
 }
 
-/* SERVICES Section */
+/****************************************************** SERVICES Section ***************************************************/
 .services{
     height: auto;
     width: 100%;
@@ -414,7 +422,7 @@ a.active,a:hover{
     height: 100%;
 }
 
-/* CONTACT Section */
+/************************************************* CONTACT Section ********************************************************/
 .contact{
     position: relative;
     min-height: 100vh;
@@ -532,7 +540,7 @@ a.active,a:hover{
     
 }
 
-/* FOOTER Section */
+/****************************************************** FOOTER Section ***************************************************/
 footer{
     display: grid;
     justify-content: end;
